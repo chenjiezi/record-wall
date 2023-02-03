@@ -43,16 +43,16 @@ const list = ref([
   "测试数据测试数据测试数据测试数据测试",
 ]);
 
-// setInterval(() => {
-//   list.value.push("测试数据测试数据测试数据测试数据测试数据测试数据测试数据");
-// }, 500);
+setInterval(() => {
+  list.value.push("测试数据测试数据测试数据测试数据测试数据测试数据测试数据");
+}, 500);
 </script>
 
 <template>
   <div class="w-100% min-h-screen bg-gray-500 p-10px">
     <div class="flex flex-wrap">
       <div
-        class="w-250px h-60px bg-blue-400 m-r12px mb-12px border-rd flex items-center p-10px"
+        class="w-250px h-60px bg-blue-400 m-r12px mb-12px border-rd flex items-center p-10px animate__animated animate__lightSpeedInLeft"
         v-for="item in list"
         :key="item"
       >
